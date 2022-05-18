@@ -2,4 +2,10 @@
 - hosts: localhost
   roles:
     - role: andrewrothstein.yq
+- hosts: localhost
+  tasks:
+    - name: copy script to run roles into /usr/local/bin
+      copy:
+        src: scripts/run_role.sh
+        dest: /usr/local/bin
 
