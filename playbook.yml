@@ -8,4 +8,5 @@
       copy:
         src: scripts/run_role.sh
         dest: /usr/local/bin
+        mode: 0555
 
